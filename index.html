@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css & DaisyUI Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(139, 195, 74)",
+              secondary: "rgb(17, 17, 17)",
+              body: "rgb(248, 246, 243)",
+              accent: "rgb(106, 151, 57)",
+              body_neutral: "rgb(51, 51, 51)",
+            },
+            fontFamily: {
+              Poppins: "Poppins",
+            },
+            backgroundImage: {
+              leaf1: "url('./images/leaf01.png')",
+              call_to_action: "url('./images/call.jpg')",
+              testimonials: "url('./images/testimonials.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Poppins">
+    <!-- Header section -->
+    <header class="w-11/12 mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="">
+              <img class="lg:w-36 w-32" src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-semibold">
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a>Home</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a>Everything</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a>Groceries</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a>About</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-2 items-center">
+            <h3 class="text-primary">$20.00</h3>
+            <i class="fa-solid fa-cart-shopping text-primary"></i>
+            <i class="fa-solid fa-user hidden lg:block"></i>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 right-0 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Everything</a></li>
+                <li><a>Groceries</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+  </body>
+</html>
